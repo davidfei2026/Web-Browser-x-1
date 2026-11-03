@@ -1,0 +1,17 @@
+{
+  "name": "Math Fact Lab Lite",
+  "short_name": "MathFactLab",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#F8F9FA",
+  "theme-color": "#4A90E2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://flaticon.com",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
