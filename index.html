@@ -26,7 +26,6 @@
             --dot-bg: #CBD5E1;
         }
 
-        /* Dark Mode Variant overrides */
         [data-theme="dark"] {
             --light: #0F172A;
             --card-bg: #1E293B;
@@ -95,7 +94,6 @@
             gap: 16px; 
         }
 
-        /* Stats Dashboard */
         .dashboard {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -110,7 +108,6 @@
         .stat-val { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
         .stat-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-top: 2px;}
 
-        /* Controls & Settings */
         .controls-wrapper {
             background: var(--card-bg);
             border-radius: 16px;
@@ -163,7 +160,6 @@
             outline: none;
         }
 
-        /* Flashcard Core */
         .card { 
             background: var(--card-bg); 
             border-radius: 20px; 
@@ -182,10 +178,9 @@
             margin-bottom: 10px;
         }
 
-        /* Conceptual Strategy Models */
         .strategy-container {
             margin: 15px 0 5px;
-            min-height: 60px;
+            min-height: 70px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -237,7 +232,6 @@
             color: var(--text-muted);
         }
 
-        /* Interaction Panel */
         .input-area { display: flex; width: 100%; gap: 12px; }
         input[type="number"] { 
             flex: 1; 
@@ -269,7 +263,6 @@
             cursor: pointer; 
         }
 
-        /* Notification Banners */
         .feedback { 
             font-size: 1.1rem; 
             font-weight: 700; 
@@ -277,6 +270,8 @@
             border-radius: 12px;
             margin-top: 10px;
             display: none;
+            text-align: center;
+            width: 100%;
             animation: popIn 0.2s ease-out;
         }
         .feedback.correct { display: block; background: var(--success-light); color: var(--success); }
@@ -312,3 +307,8 @@
         </div>
 
         <div class="controls-wrapper">
+            <div class="segmented-control">
+                <button class="op-btn active" onclick="setOperation('+')">+</button>
+                <button class="op-btn" onclick="setOperation('-')">−</button>
+
+                
